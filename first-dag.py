@@ -6,7 +6,7 @@ from airflow.operators.empty import EmptyOperator
 
 @dag(start_date=datetime.datetime(2021, 1, 1), schedule="@daily")
 def generate_dag():
-    EmptyOperator(task_id="daily-task")
+    EmptyOperator(task_id="another-daily-task")
 
 
 generate_dag()
